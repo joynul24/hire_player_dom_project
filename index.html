@@ -103,13 +103,16 @@
         <div class="flex-1">
             <!-- const section -->
             <div class="text-center p-5 shadow-2xl rounded-xl bg-purple-200">
-                <h1 class="text-5xl font-extrabold">My Cart</h1>
-                <div class="flex justify-evenly text-3xl font-bold py-4 mt-5 border-y-4 border-black">
+                <h1 class="text-5xl font-extrabold border-b-4 border-black pb-5">My Cart</h1>
+                <div class="flex mt-5 justify-evenly text-3xl font-bold">
                     <div class="name">Name</div>
                     <div class="price">Price</div>
                     <div class="category">Category</div>
                 </div>
-                <h2 class="text-3xl font-extrabold mt-5">Total Cost: <span>0</span>$</h2>
+                <!-- Selected players container -->
+                <div id="selected-players-container"></div>
+
+                <h2 class="text-3xl font-extrabold pt-4 mt-5 border-t-4 border-black">Total Cost: <span>0</span>$</h2>
                 <div class="flex justify-center gap-3 border-y-4 border-black py-5 mt-5">
                     <input type="text" placeholder="Coupon Code"
                         class="input input-bordered input-primary w-full max-w-xs" />

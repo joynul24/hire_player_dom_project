@@ -4,3 +4,8 @@
 .font-roboto {
     font-family: "Roboto", sans-serif;
 }
+
+.selected-players{
+    display: flex;
+    justify-content: space-evenly;
+}
