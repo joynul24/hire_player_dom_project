@@ -112,13 +112,13 @@
                 <!-- Selected players container -->
                 <div id="selected-players-container"></div>
 
-                <h2 class="text-3xl font-extrabold pt-4 mt-5 border-t-4 border-black">Total Cost: <span>0</span>$</h2>
+                <h2 class="text-3xl font-extrabold pt-4 mt-5 border-t-4 border-black">Total Cost: <span id="total-cost">0</span>$</h2>
                 <div class="flex justify-center gap-3 border-y-4 border-black py-5 mt-5">
-                    <input type="text" placeholder="Coupon Code"
+                    <input id="coupon-code" type="text" placeholder="Coupon Code"
                         class="input input-bordered input-primary w-full max-w-xs" />
-                    <button class="btn btn-info">Apply</button>
+                    <button onclick="updateGrandTotal('apply-btn')" class="btn btn-info">Apply</button>
                 </div>
-                <h2 class="text-4xl font-extrabold mt-5">Grand Total: <span>0</span>$</h2>
+                <h2 class="text-4xl font-extrabold mt-5">Grand Total: <span id="grand-total">0</span>$</h2>
             </div>
         </div>
 

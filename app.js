@@ -29,8 +29,36 @@ for (const btn of allBtn) {
         div.appendChild(p2);
         div.appendChild(p3);
         selectedContainer.appendChild(div);
+
+        updateTotalCost(price);
+        updateGrandTotal();
     });
-}
+};
+
+
+function updateGrandTotal(status) {
+    const totalCost = getConverteValue('total-cost');
+    if (status === undefined) {
+        document.getElementById('grand-total').innerText = totalCost;
+    }
+    else {
+        const couponCode = document.getElementById('coupon-code').value;
+        if (couponCode === 'love24') {
+            const discounted = totalCost * 0.2;
+            document.getElementById('grand-total').innerText = totalCost - discounted;
+        }
+        else (
+            alert("Please enter valid coupon coede!")
+        )
+    }
+};
+
+
+function updateTotalCost(value) {
+    const totalCost = getConverteValue('total-cost');
+    const sum = totalCost + parseInt(value);
+    document.getElementById('total-cost').innerText = sum;
+};
 
 
 function getConverteValue(id) {
